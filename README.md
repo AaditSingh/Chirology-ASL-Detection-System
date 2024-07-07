@@ -6,10 +6,6 @@
 
 Sign Language Recognition System aims to bridge the communication gap between speech-impaired or deaf individuals and those who do not understand sign language. This system recognizes hand signs and gestures, converting them into readable text to facilitate communication.
 
-## 🎯 Motivation
-
-According to the 2011 Indian census, roughly 1.3 million people have hearing impairments, with the National Association of the Deaf estimating this number to be around 18 million. This significant number of individuals highlights the need for a system that can help them communicate effectively with those who do not understand sign language.
-
 ## ✨ Features
 
 - **Sign Language Interpreter/Translator:** Facilitates communication between deaf-dumb and normal individuals without needing a human translator.
@@ -177,12 +173,6 @@ Contributions are welcome to this project. To contribute:
 3. Commit your changes (`git commit -m 'Add some feature'`).
 4. Push to the branch (`git push origin feature-branch`).
 5. Open a pull request.
-
-## 📚 References
-
-- "The Cognitive, Psychological, and Cultural Impact of Communication Barrier on Deaf Adults". Journal of Communication Disorders, Deaf Studies Hearing Aids 4 (2 2016). doi: 10.4172/2375-4427.1000164.
-- Mihir Garimella. “Sign Language Recognition with Advanced Computer Vision”. [Towards Data Science](https://towardsdatascience.com/sign-language-recognition-with-advanced-computer-vision-7b74f20f3442).
-- Vivek Bheda and Dianna Radpour. “Using Deep Convolutional Networks for Gesture Recognition in American Sign Language”. CoRR abs/1710.06836 (2017). [arXiv](http://arxiv.org/abs/1710.06836).
 
   ## 👤 Author
 - **Aadit Singh**
