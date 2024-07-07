@@ -31,6 +31,47 @@ We are using the “Sign Language MNIST” dataset, a public-domain, free-to-use
 
 ## 🏛️ System Architecture
 
++------------------+       +-----------------------+       +---------------------+
+|  Data Acquisition|----->|      Preprocessing     |----->|   Model Architecture |
+| (Sign Language MNIST)   | (Resize, Normalize,    |       | (Conv2D, MaxPool2D,  |
+|                          |  Data Augmentation)   |       |  BatchNormalization, |
++------------------+       +-----------------------+       |  Flatten, Dense,     |
+                                                           |  Dropout, Softmax)   |
+                                                           +---------------------+
+                                                                    |
+                                                                    v
+                                                    +-----------------------------+
+                                                    |          Training           |
+                                                    | (Compile, Callbacks, Fit)   |
+                                                    +-----------------------------+
+                                                                    |
+                                                                    v
+                                                    +-----------------------------+
+                                                    |         Prediction          |
+                                                    | (Load Model, Preprocess,    |
+                                                    |  Predict)                   |
+                                                    +-----------------------------+
+                                                                    |
+                                                                    v
+                                                    +-----------------------------+
+                                                    |           Output            |
+                                                    | (Recognized Text, gTTS)     |
+                                                    +-----------------------------+
+                                                                    |
+                                                                    v
+                                                    +-----------------------------+
+                                                    |       User Interface        |
+                                                    | (Real-Time Video Capture,   |
+                                                    |  Hand Tracking, Display)    |
+                                                    +-----------------------------+
+                                                                    |
+                                                                    v
+                                                    +-----------------------------+
+                                                    |      Environment Setup      |
+                                                    | (Suppress TF Warnings)      |
+                                                    +-----------------------------+
+
+
 ### 1. Data Acquisition
 - **Dataset:** Sign Language MNIST dataset from [Kaggle](https://www.kaggle.com/datasets/datamunge/sign-language-mnist)
 - **Format:** CSV file containing pixel information for images of ASL letters
